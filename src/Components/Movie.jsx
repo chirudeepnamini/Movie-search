@@ -11,7 +11,7 @@ function Movie() {
   React.useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://www.omdbapi.com/?i=${movie_id}&apikey=9e579f61`)
+      .get(`https://www.omdbapi.com/?i=${movie_id}&apikey=9e579f61`)
       .then((response) => {
         setData(response.data);
         console.log(response.data);
