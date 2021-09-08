@@ -18,7 +18,7 @@ function Mdb() {
       setNeedinput("search something...");
     }
     axios
-      .get(`http://www.omdbapi.com/?s=${search_term}&apikey=9e579f61`)
+      .get(`https://www.omdbapi.com/?s=${search_term}&apikey=9e579f61`)
       .then((response) => {
         console.log(response.data);
         if (response.data.Response == "False") {
